@@ -1,0 +1,351 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Portfolio Website</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/e9cbe5b7e3.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <!-- Header Section -->
+    <div id="header">
+        <div class="container">
+            <nav>
+                <style>
+                    .logo {
+                        width: 150px; /* Adjust the size of the logo */
+                        animation: bounce 2s ease-in-out infinite; /* Apply animation */
+                    }
+                
+                    /* Define the bounce animation */
+                    @keyframes bounce {
+                        0% {
+                            transform: translateY(0); /* Start at original position */
+                        }
+                        25% {
+                            transform: translateY(-10px); /* Move up */
+                        }
+                        50% {
+                            transform: translateY(0); /* Back to original position */
+                        }
+                        75% {
+                            transform: translateY(-10px); /* Move up again */
+                        }
+                        100% {
+                            transform: translateY(0); /* Back to original position */
+                        }
+                    }
+                </style>
+                
+                <img src="C:\Users\VICTUS\Desktop\Networking Website\DALL·E 2024-11-13 22.50.47 - A sleek, professional logo for the name 'Himasha' in a dark theme. The logo should feature elegant and modern typography, with smooth, flowing curves .webp" class="logo" alt="Logo">
+
+                <style>
+                    /* Style for links */
+                    nav a {
+                        color: lightblue;
+                        text-decoration: none;
+                        font-size: 16px;
+                        transition: color 0.3s ease;
+                    }
+                    
+                    /* Change color on hover */
+                    nav a:hover {
+                        color: lightblue;
+                    }
+                    
+                    /* Style the list items */
+                    nav li {
+                        list-style: none;
+                        display: inline-block;
+                        margin-right: 20px;
+                    }
+                    .fa-circle-xmark,
+    .fa-bars {
+        display: none;
+    }
+                </style>
+                
+                <nav id="sidemenu">
+                    <ul>
+                        <li><a href="#header">Home</a></li>
+                        <li><a href="#about">About</a></li>
+                        <li><a href="#services">Services</a></li>
+                        <li><a href="#portfolio">Portfolio</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                        <li><i class="fa-solid fa-circle-xmark" onclick="closemenu()"></i></li>
+                    </ul>
+                    </nav>
+                    <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+                </nav>
+                
+                <script>
+                    function openmenu() {
+                        document.getElementById("sidemenu").style.display = "block";
+                    }
+                    function closemenu() {
+                        document.getElementById("sidemenu").style.display = "none";
+                    }
+                </script>
+                 
+            <div class="header-text">
+                <style>
+                    .styled-text {
+                        color: purple;
+                        font-weight: bold;
+                        text-decoration: underline;
+                    }
+                </style>
+                
+                <p class="styled-text">SLTC Student(Undergraduate)</p>
+                
+                <h1>Hi, I'm <span>Himasha</span><br>Edirisinghe From Sri Lanka</h1>
+            </div>
+        </div>
+    </div>
+
+    <!-- About Section -->
+    <div id="about">
+        <div class="container">
+             <div class="row">
+                <div class="about-col-1">
+    <style>
+        .responsive-image{
+            max-width:20%;
+            height:auto;
+        }
+    </style>
+                    <img src="User.png.jpg" alt="User Image" class="responsive image">
+                </div>
+                <div class="about-col-2">
+                    <style>
+                        .sub-title {
+                            transition: color 0.3s ease, transform 0.3s ease;
+                        }
+                    
+                        .sub-title:hover {
+                            color: lightcoral; /* Change to purple when hovered */
+                            transform: scale(1.1); /* Slightly enlarge the text */
+                        }
+                    </style>
+                    <div class="profile-text">
+                    <h1 class="sub-title">About Me</h1>
+                    <p>I am Himasha Edirisinghe, and 22 years old youth living in Kegalle.
+                           I have Completed my O/L Education and A/L Education From St/ Joseph's Balika Maha Vidyalaya-Kegalle.
+                        I am Currently Pursuing an BSC Honour Degree in Data Science at SLTC Research University. And  I am Currently Pursuing an another Foreign IT Degree at ESOFT Metro Campus.
+                        And, I am also working as a Member of IEEE</p>
+                    </p></div>
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('Skills')">Skills</p>
+                        <p class="tab-links" onclick="opentab('Experience')">Experience</p>
+                        <p class="tab-links" onclick="opentab('Education')">Education</p>
+                    </div>
+                    <div class="tab-contents active-tab" id="Skills">
+                        <ul>
+                            <li><span>Data Science</span><br>Data analysis</li>
+                            <li><span>Web Development</span><br>Web App Development</li>
+                            <li><span>App Development</span><br>Building Android/ios apps</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="Experience">
+                        <ul>
+                            <li><span>2024-Current</span><br>Designing Web/ App interfaces</li>
+                            <li><span>2019-2024</span><br>Web App Development</li>
+                            <li><span>2016-2017</span><br>Building Android/ios apps</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="Education">
+                        <ul>
+                            <li><span>2024-present</span><br>Undergraduate Student in BSC Data Science in SLTC Research University</li>
+                            <li><span>2017</span>GCE Ordinery Level<span>7A,1B.1C</span><br></li>
+                            <li><span>2022(2023)</span>GCE Advanced Level<span>1B,2C from Maths Sceme</span><br></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Services Section -->
+    <div id="services">
+        <div class="container">
+            <style>
+                .sub-title {
+                    transition: color 0.3s ease, transform 0.3s ease;
+                }
+            
+                .sub-title:hover {
+                    color: lightcoral; /* Change to purple when hovered */
+                    transform: scale(1.1); /* Slightly enlarge the text */
+                }
+            </style>
+            
+            <h1 class="sub-title">My Services</h1>
+            
+            <div class="services-list">
+                <div>
+                    <i class="fa-solid fa-code"></i>
+                    <h2>Web Design</h2>
+                    <p>Design and develop efficient web interfaces and applications.</p>
+                    <a href="#">Learn more</a>
+                </div>
+                <div>
+                    <i class="fa-solid fa-crop"></i>
+                    <h2>Data Science</h2>
+                    <p>Conduct data analysis and modeling to drive business insights.</p>
+                    <a href="#">Learn more</a>
+                </div>
+                <div>
+                    <i class="fa-brands fa-app-store-ios"></i>
+                    <h2>App Design</h2>
+                    <p>Create engaging mobile app interfaces with user experience focus.</p>
+                    <a href="#">Learn more</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Portfolio Section -->
+    <div id="portfolio">
+        <div class="container">
+            <h1 class="sub-title">My Work</h1>
+            <div class="work-list">
+                <div class="work">
+                    <img src="download.jpeg" alt="Social Media App">
+                    <div class="layer">
+                        <h3>Social Media App</h3><br>
+                        <p style="font-weight: bold;"></p>Developed an engaging social media application with modern features.</p>
+                        <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="images.jpeg" alt="Music App">
+                    <div class="layer">
+                    
+                        <html lang="en">
+                        <head>
+                            <meta charset="UTF-8">
+                            <meta http-equiv="X-UA-Compatible" content="IE=edge">
+                            <meta name="viewport" content="width=device-width, initial-scale=1.0">
+                            <title>Transition Effect Example</title>
+                            <style>
+                                /* Style for the h3 element */
+                                h3 {
+                                    font-size: 24px;
+                                    color: #333; /* Initial color */
+                                    transition: color 0.3s ease, transform 0.3s ease; /* Smooth transition for color and scale */
+                                }
+                        
+                                /* Style when hovering over the h3 element */
+                                h3:hover {
+                                    color: purple; /* Change color to purple on hover */
+                                    transform: scale(1.1); /* Slightly enlarge the text */
+                                }
+                            </style>
+                        </head>
+                        <body>
+                        
+                            <!-- Music App heading with transition effect -->
+                            <h3>Music App</h3>
+                        
+                        </body>
+                        </html>
+                        
+                        <p style="font-weight: bold;">Designed a music app with personalized playlists and recommendations.</p>
+
+                        <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="images (1).jpeg" alt="Online Shopping App">
+                    <div class="layer">
+                        <h3>Online Shopping App</h3><br>
+                         <p style="font-weight: bold;">Created a user-friendly shopping app with secure payment integration.</p>
+                        <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+            </div>
+            <a href="#" class="btn">See more</a>
+        </div>
+    </div>
+
+    <!-- Contact Section -->
+    <div id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="contact-left">
+                    <h1 class="sub-title">Contact Me</h1>
+                    <p><i class="fa-solid fa-paper-plane"></i>cit-24-01-0426@sltc.ac.lk</p>
+                    <p><i class="fa-solid fa-square-phone"></i>+94789680962</p>
+                    <div class="social-icons">
+                        <a href="https://www.fb.com/l/6lp1kJRRR"><i class="fa-brands fa-facebook"></i></a>
+                        <a href="https://www.instagram.com/invites/contact/?igsh=pjdehsuegc8y&utm_content=m04yl9b"><i class="fab fa-instagram"></i></a>
+                        <a href="https://www.linkedin.com/in/roshani-himasha-558739307?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"><i class="fa-brands fa-linkedin"></i></a>
+                    </div>
+                    <a href="C:\Users\VICTUS\Desktop\Networking Website\CV - Himasha Edirisinghe  NEW 2024 CV.pdf" download class="btn btn2">Download CV</a>
+                </div>
+                
+                <div class="contact-right">
+                    <form name="submit-to-google-sheet">
+                        <input type="text" name="Name" placeholder="Your Name" required>
+                        <input type="email" name="Email" placeholder="Your Email" required>
+                        <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                        <button type="submit" class="btn btn2">Submit</button>
+                    </form>
+                    <span id="msg"></span>
+                </div>
+            </div>
+        </div>
+        <div class="copyright">
+            <p>Copyright @ Himasha Made with <i class="fa-solid fa-heart"></i> by Easy Tutorials</p>
+        </div>
+    </div>
+
+    <script>
+        function opentab(tabname) {
+            var tablinks = document.getElementsByClassName("tab-links");
+            var tabcontents = document.getElementsByClassName("tab-contents");
+
+            for (var tablink of tablinks) {
+                tablink.classList.remove("active-link");
+            }
+            for (var tabcontent of tabcontents) {
+                tabcontent.classList.remove("active-tab");
+            }
+            event.currentTarget.classList.add("active-link");
+            document.getElementById(tabname).classList.add("active-tab");
+        }
+
+        var sidemenu = document.getElementById("sidemenu");
+
+        function openmenu() {
+            sidemenu.style.right = "0";
+        }
+
+        function closemenu() {
+            sidemenu.style.right = "-200px";
+        }
+    </script>
+    <script>
+        const scriptURL = 'https://script.google.com/macros/s/AKfycby8IL94AOp3JTiRbS7Yup139yy1EVpYclgrzMFXTMMFJObOXhu7brkZZavppen9nG3XTw/exec'
+        const form = document.forms['submit-to-google-sheet']
+        const msg= document.getElementById("msg")
+      
+        form.addEventListener('submit', e => {
+          e.preventDefault()
+          fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+            .then(response => {
+                msg.innerHTML="Message sent successfully"
+                setTimeout(function(){
+                    msg.innerHTML = ""
+                },5000)
+                form.reset()
+            })
+            .catch(error => console.error('Error!', error.message))
+        })
+      </script>
+</body>
+
+</html>
